@@ -1,6 +1,6 @@
 # SmartFit: Personalized 3D Human Body Modeling  
 
-![Creating by Deform-Based Global Mapping](https://raw.githubusercontent.com/1900zyh/3D-Human-Body-Shape/master/docs/dg-h.png)
+![Creating by Deform-Based Global Mapping](https://raw.githubusercontent.com/Varun-Chowdary-V/SmartFit/main/docs/dg-h.png)
 
 SmartFit: Personalized 3D Human Body Modeling  
   
@@ -26,7 +26,7 @@ The SmartFit system operates in two stages: **offline training** and **online ex
    - User-provided inputs (e) with missing data (‘?’) are completed using **MICE** for imputation (f).  
    - The completed parameter set (f) is passed to the Mapper, which uses pre-trained masks (c) and matrices (d) to generate the final 3D body mesh (g).  
 
-![Framework](https://raw.githubusercontent.com/1900zyh/3D-Human-Body-Shape/master/docs/framework.PNG)
+![Framework](https://raw.githubusercontent.com/Varun-Chowdary-V/SmartFit/main/docs/framework.PNG)
 
 
 
@@ -35,7 +35,7 @@ The SmartFit system operates in two stages: **offline training** and **online ex
 The SmartFit system was validated against benchmark datasets, showcasing its accuracy across diverse body types. The results (see table below) emphasize the effectiveness of the mapping methods in delivering precise reshaping outcomes.  
 
 <div align="center">
-	<img src="https://raw.githubusercontent.com/1900zyh/3D-Human-Body-Shape/master/docs/table2.PNG" alt="Editor" width="500">
+	<img src="https://raw.githubusercontent.com/Varun-Chowdary-V/SmartFit/main/docs/table2.PNG" alt="Editor" width="500">
 </div>
 
 
@@ -53,9 +53,9 @@ pip install -r requirements.txt
 ### Preparation  
 
 1. Download training data from [SPRING](https://graphics.soe.ucsc.edu/data/BodyModels/index.html).  
-2. Place datasets in the `3D-human-Body-Shape/data` directory.  
+2. Place datasets in the `SmartFit/data` directory.  
 3. Clone the repository:  
-git clone https://github.com/1900zyh/3D-Human-Body-Shape.git cd 3D-Human-Body-Shape/
+git clone https://github.com/Varun-Chowdary-V/SmartFit.git cd 3D-Human-Body-Shape/
 
 
 
@@ -67,22 +67,22 @@ cd src/ python train.py
 
 ### Testing  
 
-Test the system using the [released model](https://github.com/1900zyh/3D-Human-Body-Shape/tree/master/release_model):  
+Test the system using the [released model](https://github.com/Varun-Chowdary-V/SmartFit/tree/blob/main/release_model):  
 cd src/ python demo.py
 
 
 ## Demo  
 
 1. **Adjust size**: Modify anthropometric parameters for simulation.  
-   ![Demo Step 1](https://raw.githubusercontent.com/1900zyh/3D-Human-Body-Shape/master/docs/fig1.png)  
+   ![Demo Step 1](https://raw.githubusercontent.com/Varun-Chowdary-V/SmartFit/main/docs/fig1.png)  
 
 2. **Save**: Use `Ctrl + S` to save the 3D model (`.obj` file).  
 
 3. **Switch Mapping Methods**: Select between global or local mapping strategies.  
-   ![Demo Step 3](https://raw.githubusercontent.com/1900zyh/3D-Human-Body-Shape/master/docs/fig2.png)  
+   ![Demo Step 3](https://raw.githubusercontent.com/Varun-Chowdary-V/SmartFit/main/docs/fig2.png)  
 
 4. **Predict**: Input parameter values for prediction; defaults can be estimated.  
-   ![Demo Step 4](https://raw.githubusercontent.com/1900zyh/3D-Human-Body-Shape/master/docs/fig3.png)  
+   ![Demo Step 4](https://raw.githubusercontent.com/Varun-Chowdary-V/SmartFit/main/docs/fig3.png)  
 
 
 
